@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "target": "es5", // 컴파일된 JavaScript가 어떤 ECMAScript 버전을 타겟으로 할지 정의
+    "lib": ["dom", "dom.iterable", "esnext"], // 컴파일러가 사용할 라이브러리 타입 정의
+    "allowJs": true, // JavaScript 파일 컴파일 허용
+    "skipLibCheck": true, // 선언 파일에 대한 타입 체크 건너뛰기
+    "esModuleInterop": true, // ES6 모듈 사양 준수
+    "allowSyntheticDefaultImports": true, // 기본 import 문 사용 허용
+    "strict": true, // 모든 엄격한 타입 체킹 옵션 활성화
+    "forceConsistentCasingInFileNames": true, // 파일 이름의 대소문자 일관성 강제
+    "module": "esnext", // 사용할 모듈 시스템 지정
+    "moduleResolution": "node", // 모듈 해석 전략 설정
+    "resolveJsonModule": true, // .json 파일을 모듈로 가져오기 허용
+    "isolatedModules": true, // 각 파일을 별도의 모듈로 변환
+    "noEmit": true, // 출력 파일 생성 안함
+    "jsx": "react-jsx" // JSX 코드를 처리하는 방식 지정
+  },
+  "include": [
+    "src" // 컴파일할 파일이 포함된 폴더
+  ],
+  "exclude": [
+    "node_modules", "build", "scripts", "acceptance-tests", "webpack", "jest", "src/setupTests.ts"
+  ]
+}
