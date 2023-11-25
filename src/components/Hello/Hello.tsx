@@ -25,8 +25,8 @@ function Hello() {
     e.preventDefault();
 
     try {
-    //   const response = await fetch("/api/sendEmail", {
-      const response = await fetch("http://localhost:3001/api/sendEmail", {
+      const response = await fetch("/api/sendEmail", {
+    //   const response = await fetch("http://localhost:3001/api/sendEmail", {
 
         method: "POST",
         headers: {
