@@ -6,9 +6,11 @@ module.exports = withMT({
   theme: {
     extend: {
       fontFamily: {
-        sans: ['RIDIBatang', ...defaultTheme.fontFamily.sans],
+        sans: ['KBO-Dia-Gothic_medium', ...defaultTheme.fontFamily.sans],
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-fontawesome')
+  ],
 });

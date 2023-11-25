@@ -4,8 +4,7 @@ import { createGlobalStyle } from 'styled-components';
 export const GlobalStyles = createGlobalStyle`
 
 body{
-    font-family: 'RIDIBatang';
-
+    font-family: 'KBO-Dia-Gothic_medium';
     padding: 0;
     margin: 0;
     overflow-y: scroll;
