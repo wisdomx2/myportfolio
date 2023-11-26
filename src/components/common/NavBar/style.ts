@@ -15,7 +15,7 @@ box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06
   }
 	.nav-container {
 		background-color: white;
-		padding: 0rem 2rem;
+		padding: 0.8rem 2rem;
 		color: black;
 	}
 

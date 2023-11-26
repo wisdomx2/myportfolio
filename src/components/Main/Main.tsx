@@ -2,6 +2,7 @@
 import { Typography } from "@material-tailwind/react";
 import { MainWrapper } from "./style";
 import { Mail, Phone } from "@mui/icons-material/";
+import Skills from "../Skills/Skills";
 
 function Main() {
   // const [showText, setShowText] = useState(0);
@@ -79,14 +80,14 @@ function Main() {
             //   visibility: showText >= 5 ? "visible" : "hidden",
             //   animation: "fadeIn 5s",
             // }}
-            className="mb-9"
+            className="mb-7"
           >
             긍정에너지로 함께 성장하는 것을 소중히 생각합니다.
           </Typography>
 
           <div className="main-contact flex-col">
             <div
-              className="flex items-center gap-3 mb-3"
+              className="flex items-center gap-3 mb-2"
               // style={{
               //   visibility: showText >= 6 ? "visible" : "hidden",
               //   animation: "fadeIn 6s",
@@ -107,6 +108,7 @@ function Main() {
               <Typography variant="h4">dnql54@gmail.com</Typography>
             </div>
           </div>
+          <Skills />
         </div>
       </div>
     </MainWrapper>

@@ -8,8 +8,13 @@ function NavBar() {
     <NavBarWrapper>
       <div className="nav-container">
         <ul>
-          <div className="nav-logo">
+          <div className="nav-logo gap-2">
+          <NavBarLink
+              to="/"
+              className={({ isActive }) => (isActive ? "active" : "")}
+            >
             <img src={logo} alt="" />
+            </NavBarLink>
             <NavBarLink
               to="/"
               className={({ isActive }) => (isActive ? "active" : "")}
