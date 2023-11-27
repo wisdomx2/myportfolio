@@ -24,10 +24,16 @@ function ProjectDetail() {
             className="h-96 w-1/2 rounded-lg object-center shadow-lg shadow-blue-gray-900/50"
           />
           <div className="detail-main-text">
-            <Typography variant="h5">📌 프로젝트 제목 : {project.name}</Typography>
-            <Typography variant="h5">📌 프로젝트 기간 : {project.period}</Typography>
+            <Typography variant="h5">
+              📌 프로젝트 제목 : {project.name}
+            </Typography>
+            <Typography variant="h5">
+              📌 프로젝트 기간 : {project.period}
+            </Typography>
             {project.awards ? (
-              <Typography variant="h5">🏆 수상내역: {project.awards}</Typography>
+              <Typography variant="h5">
+                🏆 수상내역: {project.awards}
+              </Typography>
             ) : (
               ""
             )}
@@ -40,20 +46,25 @@ function ProjectDetail() {
         </div>
         <div className="main-text m-6">
           <div className="role mb-3">
-          <Typography variant="h5">✨ 역할 및 담당</Typography>
-          {project.role.split("\n").map((line) => (
-            <Typography key={line}>{line}</Typography>
-          ))}
+            <Typography variant="h5">✨ 역할 및 담당</Typography>
+            {project.role.split("\n").map((line) => (
+              <Typography key={line}>{line}</Typography>
+            ))}
           </div>
           {/* <Typography>기여도 : {project.contribution}</Typography> */}
           <div className="feeling mb-3">
-          <Typography variant="h5">느낀점 : {project.feeling}</Typography>
+            <Typography variant="h5">느낀점 : </Typography>
+            {project.feeling.split("\n").map((line) => (
+              <Typography key={line}>
+                {line}
+              </Typography>
+            ))}
           </div>
           <div className="description2">
-          <Typography variant="h5">상세기능 소개</Typography>
-          {project.description2.split("\n").map((line) => (
-            <Typography key={line}>{line}</Typography>
-          ))}
+            <Typography variant="h5">상세기능 소개</Typography>
+            {project.description2.split("\n").map((line) => (
+              <Typography key={line}>{line}</Typography>
+            ))}
           </div>
         </div>
       </div>
