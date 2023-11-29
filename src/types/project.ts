@@ -10,6 +10,7 @@ export interface Project {
 	contribution: string;
 	feeling: string;
 	description2: string;
+	mydescription: string;
 	detailimg1: string;
 	// detailimg2: string;
 	// detailimg3: string;

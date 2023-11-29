@@ -2,7 +2,6 @@
 import { Typography } from "@material-tailwind/react";
 import { MainWrapper } from "./style";
 import { Mail, Phone } from "@mui/icons-material/";
-import Skills from "../Skills/Skills";
 
 function Main() {
   // const [showText, setShowText] = useState(0);
@@ -108,7 +107,6 @@ function Main() {
               <Typography variant="h4">dnql54@gmail.com</Typography>
             </div>
           </div>
-          <Skills />
         </div>
       </div>
     </MainWrapper>
